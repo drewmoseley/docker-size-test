@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+MAINTAINER drew.moseley@toradex.com
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt update
+RUN apt -y install apt-utils
+RUN apt -y dist-upgrade
+CMD ["echo","Docker Image Size Test"]

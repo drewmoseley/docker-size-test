@@ -1,0 +1,13 @@
+FROM ubuntu:latest
+MAINTAINER drew.moseley@toradex.com
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt update
+RUN apt -y install apt-utils
+RUN apt -y dist-upgrade
+RUN apt -y install nginx
+RUN apt -y install bc
+RUN apt -y install build-essential
+RUN apt -y install python3.8=3.8.2-1ubuntu1 python3.8-minimal=3.8.2-1ubuntu1 libpython3.8-stdlib=3.8.2-1ubuntu1 libpython3.8-minimal=3.8.2-1ubuntu1
+RUN apt -y dist-upgrade python3.8
+COPY great-app.py /great-app.py
+CMD ["echo","Docker Image Size Test"]

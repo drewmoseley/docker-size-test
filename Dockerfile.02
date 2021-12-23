@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+MAINTAINER drew.moseley@toradex.com
+ENV DEBIAN_FRONTEND noninteractive
+RUN apt update
+CMD ["echo","Docker Image Size Test"]
