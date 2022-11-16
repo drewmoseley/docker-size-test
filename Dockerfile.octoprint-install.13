@@ -9,5 +9,5 @@ RUN apt -y install bc
 RUN apt -y install build-essential
 RUN apt -y install python3.8=3.8.2-1ubuntu1 python3.8-minimal=3.8.2-1ubuntu1 libpython3.8-stdlib=3.8.2-1ubuntu1 libpython3.8-minimal=3.8.2-1ubuntu1
 RUN apt -y dist-upgrade python3.8
-COPY octoprint-1.7.1/ /opt/octopi/
+COPY octoprint-old/ /opt/octopi/
 CMD ["echo","Docker Image Size Test"]
