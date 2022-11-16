@@ -1,0 +1,6 @@
+[submodule "octoprint-new"]
+	path = octoprint-new
+	url = git@github.com:OctoPrint/OctoPrint.git
+[submodule "octoprint-old"]
+	path = octoprint-old
+	url = git@github.com:OctoPrint/OctoPrint.git
